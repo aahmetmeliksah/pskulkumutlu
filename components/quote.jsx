@@ -1,4 +1,10 @@
 import Image from 'next/image'
+import { Caveat } from 'next/font/google'
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 export default function Quote() {
   return (
@@ -7,7 +13,7 @@ export default function Quote() {
         <p className="text-2xl mb-8">"Hayatımız düşüncelerimizin eseridir."</p>
 
         <p>
-          <span>Marcus Aurelius</span>
+          <span className={`${caveat.className} text-xl`}>Marcus Aurelius</span>
         </p>
       </div>
       <div>

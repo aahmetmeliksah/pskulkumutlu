@@ -1,4 +1,11 @@
+import { Caveat } from 'next/font/google'
+
 import SessionCards from './session-cards'
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 export default function SessionsWrapper() {
   const sessionsData = [
@@ -25,7 +32,9 @@ export default function SessionsWrapper() {
   ]
 
   return (
-    <div className="flex justify-center items-center min-h-screen space-x-4">
+    <div className="flex flex-col justify-center items-center min-h-screen space-x-4">
+      <h1 className="mb-14 text-5xl">Düşünce Odaklı Yaşam</h1>
+      <h4 className={`${caveat.className} text-xl`}>Yaşam İçin Destek</h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {sessionsData.map((session) => {
           return (

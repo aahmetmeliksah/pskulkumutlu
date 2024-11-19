@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="relative flex items-center justify-center h-screen">
       {/* HERO TEXT */}
-      <div className="w-3/4 top-1/2 bg-white/20 z-10 py-40 px-0 my-28 ml-40 rounded-3xl text-center">
+      <div className="w-3/4 top-1/2 bg-white/50 z-10 py-40 px-0 my-28 ml-40 rounded-3xl text-center">
         <h1 className="text-center text-7xl mb-10">
           <span className="text-black">
             Yaşamınıza <br /> Denge <br /> Getirin

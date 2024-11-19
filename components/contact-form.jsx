@@ -67,7 +67,7 @@ export default function ContactMePage() {
               }`}
             />
             {touched.name && !formValues.name && (
-              <p className="text-red-500 text-sm">Name is required</p>
+              <p className="text-red-500 text-sm">İsim zorunlu</p>
             )}
           </div>
           <div>
@@ -85,7 +85,7 @@ export default function ContactMePage() {
               }`}
             />
             {touched.email && !formValues.email && (
-              <p className="text-red-500 text-sm">Email is required</p>
+              <p className="text-red-500 text-sm">Email zorunlu</p>
             )}
           </div>
           <div>
@@ -103,7 +103,7 @@ export default function ContactMePage() {
               }`}
             />
             {touched.subject && !formValues.subject && (
-              <p className="text-red-500 text-sm">Subject is required</p>
+              <p className="text-red-500 text-sm">Konu zorunlu</p>
             )}
           </div>
           <div>
@@ -121,7 +121,7 @@ export default function ContactMePage() {
               }`}
             ></textarea>
             {touched.message && !formValues.message && (
-              <p className="text-red-500 text-sm">Message is required</p>
+              <p className="text-red-500 text-sm">Mesaj zorunlu</p>
             )}
           </div>
           {error && <p className="text-red-500 text-sm">{error}</p>}

@@ -1,11 +1,17 @@
 import Image from 'next/image'
+import { Caveat } from 'next/font/google'
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 export default function Aboutme() {
   return (
     <div className="bg-aboutMeBgColor flex items-center justify-between p-96">
       <div className="w-2/3">
         <h2 className="mb-20 text-5xl">Daha Fazla Bilgi Edinin</h2>
-        <h3 className="mb-20 text-2xl font-serif italic">
+        <h3 className={`${caveat.className} mb-10 text-xl font-serif italic`}>
           Güvenilir Bir Psikolojik Danışman
         </h3>
 
