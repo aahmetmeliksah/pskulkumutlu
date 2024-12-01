@@ -12,11 +12,10 @@ export default function SessionCards({ sessions }) {
   }
 
   return (
-    <div className="flex flex-col w-full h-full max-w-sm dark:bg-gray-800 dark:border-gray-700">
-      <div className="flex flex-col justify-between items-center px-4 pt-4"></div>
+    <div className="flex flex-col w-full h-full max-w-sm">
       <div className="flex flex-col items-center">
         <Image
-          className="w-60 h-60 mb-3 rounded-full shadow-lg"
+          className="w-60 h-60 mb-7 rounded-full shadow-lg"
           src={sessions.image}
           alt="Bonnie image"
           width={1000}

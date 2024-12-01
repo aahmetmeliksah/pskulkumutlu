@@ -32,17 +32,12 @@ export default function SessionsWrapper() {
   ]
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen space-x-4">
-      <h1 className="mb-14 text-5xl">Düşünce Odaklı Yaşam</h1>
-      <h4 className={`${caveat.className} text-xl`}>Yaşam İçin Destek</h4>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {sessionsData.map((session) => {
-          return (
-            <div key={session.id} className="flex justify-center mx-48">
-              <SessionCards sessions={session} />
-            </div>
-          )
-        })}
+    <div className="flex flex-col justify-center items-center min-h-screen space-x-4 mt-10 sm:mt-0">
+      <h1 className="text-4xl sm:mb-14 sm:text-5xl">Düşünce Odaklı Yaklaşım</h1>
+      <h4 className={`${caveat.className} text-xl my-5`}>Yaşam İçin Destek</h4>
+      <div className="md:flex md:flex-col lg:flex lg:flex-row lg:space-x-52">
+        <SessionCards sessions={sessionsData[0]} />
+        <SessionCards sessions={sessionsData[1]} />
       </div>
     </div>
   )

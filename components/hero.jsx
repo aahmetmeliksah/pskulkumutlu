@@ -2,15 +2,15 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <div className="relative flex items-center justify-center h-screen">
+    <div className="relative flex items-center justify-center h-screen mt-2 sm:mt-0">
       {/* HERO TEXT */}
-      <div className="w-3/4 top-1/2 bg-white/50 z-10 py-40 px-0 my-28 ml-40 rounded-3xl text-center">
-        <h1 className="text-center text-7xl mb-10">
+      <div className="absolute text-center sm:inset-0 z-10 bg-white/40 h-[46rem] sm:w-2/4 sm:h-fit sm:my-14 sm:ml-14 sm:px-20">
+        <h1 className="text-center text-7xl my-20">
           <span className="text-black">
             Yaşamınıza <br /> Denge <br /> Getirin
           </span>
         </h1>
-        <p className="w-3/5 mx-auto text-lg leading-9 mt-14 rounded-3xl">
+        <p className="w-3/4 mx-auto text-lg leading-9 my-14 font-medium">
           Kendinizi köşeye sıkışmış, kaybolmuş veya bunalmış mı hissediyorsunuz?
           Hepimiz zor günler geçirebiliriz ama mutlulukla dolu yepyeni bir
           yaşama başlamak için doğru adımı atabilirsiniz. Deneyimli bir klinik
