@@ -1,3 +1,5 @@
+import { SpeedInsights } from '@vercel/speed-insights/next'
+
 import { Provider } from '@/components/ui/provider'
 
 import localFont from 'next/font/local'
@@ -25,7 +27,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Provider>{children}</Provider>
+        <Provider>
+          {children}
+          <SpeedInsights />
+        </Provider>
       </body>
     </html>
   )
